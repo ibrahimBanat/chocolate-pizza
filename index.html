@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald:wght@200;300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +18,7 @@
     <div class="left-side">
       <img src="./assets/logo.png" alt="" />
       <h2>Delicious</h2>
-      <p>The best food blog in the Web</p>
+      <p>The best food blog in the Web.</p>
     </div>
     <div class="right-side">
       <img src="./assets/fb-icon.png" alt="" />
@@ -33,9 +37,15 @@
   <section class="hero-section">
     <main>
       <div>
-        <h2>Choclate Pizza</h2>
-        <p>Posted on 15 /Dec /2013 disert</p>
-        <img src="./assets/print-icon.png" alt="" />
+        <div class="heading">
+          <h2>Choclate Pizza</h2>
+          <p>Posted on 15 /Dec /2013 disert</p>
+        </div>
+        <div class="print">
+          <img src="./assets/print-icon.png" alt="" />
+          <p>Print</p>
+        </div>
+        
       </div>
     
   </section>
@@ -61,27 +71,53 @@
     </p>
   </section>
   <section class="check__list">
-    <ul>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-    </ul>
-    <ul>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-      <li>11/2 cups milk</li>
-    </ul>
+    <div class="left-side-checklist">
+
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox" id="checkbox1">11/2 cups milk</label></div>
+
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox">1/2 cup mascarpone</label></div>
+
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox">1/2 tsp pink salt</label></div>
+
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox">1 lb Black Mission Figs</label></div>
+
+      <div><input type="checkbox" class="checkbox"> 
+      <label for="checkbox">1/2 cup brown sugar</label></div>
+
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox">2-4 tbsp water</label></div>
+
+    </div>
+    <div class="right-side-checklist">
+      <div><input type="checkbox" class="checkbox">
+      <label for="checkbox">11/2 cups heavy cream</label></div>
+
+      <div><input type="checkbox" id="checkbox" checked  class="checkbox">
+      <label for="checkbox" class="line-through">1/3 granulated sugar</label></div>
+
+      <div><input type="checkbox" id="checkbox" checked class="checkbox">
+      <label for="checkbox" class="line-through">2 egg yolks</label></div>
+
+      <div><input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox">1 lemon, juiced</label></div>
+
+      <div><input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox">2 tbsp butter</label></div>
+
+      <div><input type="checkbox" id="checkbox" class="checkbox">
+      <label for="checkbox">1 cup honey roasted pecans, roughly chopped</label></div>
+
+    </div>
+    
   </section>
-  <section>
-    <img src="./assets/hr-img.png" alt="" class="hr-img"/>
+  <section class="info-bot">
+    <img src="./assets/hr-img.png" alt="" class="bot-hr-img"/>
     <div>
-      <img src="./assets/van-pic.png" alt="" />
+      <img src="./assets/van-pic.png" alt="" class="info-bot-avatar"/>
       <div>
         <h4>Vanessa Stevenson</h4>
         <p>
@@ -94,9 +130,17 @@
   </section>
   </main>
   <footer>
-
+    <div class="small-logo">
+      <div><img src="./assets/small-logo.png" alt="" class="small-logo-img"></div>
+      <div class="hr"><hr></div>
+    </div>
+    
+    <div class="rights">
+      <p>Delicious © 2013 All Rights Reserved.</p>
+      <p>Proudly published with Ghost.</p>
+    </div>
   </footer>
-  <script src="https://kit.fontawesome.com/fb27425b9e.js" crossorigin="anonymous"></script>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
